@@ -1,0 +1,13 @@
+//Kiểm tra dữ liệu đầu vào có đúng kiểu dữ liệu hoặc tràn bộ nhớ hay không
+//cin.fail() dữ liệu đầu vào thất bại
+if (cin.fail()) {
+  //dọn dẹp sạch sẽ dữ liệu đầu vào
+  cin.clear();
+  //xử lý dữ liệu bị kéo theo phía sau.
+  cin.ignore(32767, '\n');
+}
+else {
+    //xóa dữ liệu nhập lỗi dư kéo theo.
+   cin.ignore(32767, '\n');
+   break;
+}
